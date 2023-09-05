@@ -24,3 +24,53 @@ blockquote {
   font-weight: normal;
 }
 /* fin reset css*/
+
+html {
+  background-color: aqua;
+}
+body {
+  background-color: azure;
+  border: 2px solid blue;
+  width: 760px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+
+h1 {
+  font-size: 44px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 1px; /* para crear espacios en la letra*/
+  color: darkblue;
+  text-transform: uppercase; /*para texto en mayusculas*/
+  background-color: chartreuse;
+  padding: 5px 15px 2px 15px;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkblue;
+  border-top: 2px dotted brown; /* ddotted es de tipo puntos*/
+  border-bottom: 2px dotted brown;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 15px 0px 5px 0px;
+  overflow: hidden; /*para que se detenga en el momento del contacto con otra etiqueta*/
+}
+.lateral {
+  width: 30%;
+  float: right; /*para que flote al rededor de las otras etiquetas*/
+  background-color: aqua;
+  border: 1px dotted gray;
+  padding: 10px 20px; /*forma abreviada arriba, abajo derecha izquierda*/
+  margin: 10px;
+  border-top: 20px solid gray;
+  /**/
+}
+.lateral h2 {
+  border: none;
+  margin-top: 0;
+  padding: 0;
+}

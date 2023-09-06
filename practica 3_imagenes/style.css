@@ -18,3 +18,24 @@ h1 {
   padding: 5px 0 5px 8px;
   color: #14556b;
 }
+p {
+  font: 1.6em "Times New Roman", Times, serif;
+  margin: 10px 8px;
+}
+.figure img {
+  border: 1px solid black;
+  padding: 10px;
+}
+.figure {
+  float: right;
+  width: 222px;
+  margin: 15px 10px 5px 10px;
+}
+.figure p {
+  font: 1em bold Verdana, Geneva, Tahoma, sans-serif;
+  color: #14556b;
+  text-align: center;
+  background-color: cornflowerblue;
+  border: 1px dashed burlywood;
+  margin: 10px 0 0 0;
+}

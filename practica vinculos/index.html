@@ -6,6 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        a {
+            color: darkblue;
+            text-decoration: none;
+            /*para quitart el subrayado a los links*/
+            font-weight: bold;
+            /*para poner en negrita*/
+            border-bottom: 2px solid #f30;
+
+        }
+
+        /*psudoclase*para los links: link, visited, hover, active*/
+
+        a:visited {
+
+            color: #999;
+
+        }
+
+        a:hover {
+            color: #fff;
+            background-color: #666;
+            border-bottom: #666;
+        }
+
+        #correo a {
+            color: #666666;
+            border: none;
+            background: url(images/email.gif) no-repeat left center;
+            padding-left: 20px;
+            margin-left: 10px;
+
+        }
+
+        #recursos a {
+            border-bottom: none;
+            padding-right: 20px;
+
+        }
+
+        /* ace referencia a los que inician href ^  por esta exprecion http:// */
+        a[href^='http://'] {
+            background: url(images/globe.png) no-repeat right top;
+        }
+
+        /* ace referencia a una ruta que termina en .pdf, .doc, .zip */
+        a[href$='.pdf'] {
+            background: url(images/acrobat.png) no-repeat right top;
+        }
+
+        a[href$='.doc'] {
+            background: url(images/word.png) no-repeat right top;
+        }
+
+        a[href$='.zip'] {
+            background: url(images/zip.png) no-repeat right top;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -15,13 +74,14 @@
         <p class="byline">OCTUBRE 8<strong>PÍLDORAS</strong></p>
         <div id="recursos">
             <h3> ReCURSOS</h3>
-            <ul>
+            <ul id="ul">
                 <li><a href="informe.pdf">Informe anual</a></li>
                 <li><a href="plantilla.doc">Plantilla Mundial Corporativa</a></li>
                 <li><a href="logos.zip">Gráficos Corporativos</a></li>
                 <li><a href="http://www.pildorasinformaticas.com">Sitio Corporativo </a></li>
                 <li><a href="http://www.google.com/">Más Vínculos</a></li>
             </ul>
+
         </div>
         <h3>Esse quam nulla</h3>
         <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex

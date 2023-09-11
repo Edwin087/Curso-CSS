@@ -1,0 +1,42 @@
+#navegacionPrincipal,
+#barraLateral,
+#pieNavega {
+  display: none;
+}
+#banner,
+#contenidoPrincipal,
+#pie,
+#principal {
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+#piePrincipal {
+  margin: 0;
+  margin-top: 15pt;
+  border-top: 1pt solid black;
+  padding-top: 5pt;
+  text-align: justify;
+}
+html,
+body,
+#banner,
+#pie {
+  background-color: white;
+}
+#banner {
+  height: auto;
+  text-align: center;
+  border-bottom: 2pt solid black; /* pt para medidas a la hora de trabajar en impresión */
+  border-top: 2pt solid black;
+  padding: 10pt 0;
+  margin-bottom: 15pt;
+}
+* {
+  color: black !important;
+  /*  ...!important para que ponga si o si el color   */
+}
+a::after {
+  content: "(" attr(href) ")";
+  /* esto es para papel cuando se encuentra un vinculo ponga lel content: "("attr(href)")"; */
+}
